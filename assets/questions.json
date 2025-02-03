@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "question": "What will this output?\n\nvoid main() { print(5 ~/ 2); }",
+      "options": ["2", "3", "Error", "1"],
+      "correct": "2",
+      "explanation": "The operator ~/ performs integer division, so 5 divided by 2 gives 2.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which loop continues execution until the condition becomes false?",
+      "options": ["for", "while", "do-while", "All of these"],
+      "correct": "All of these",
+      "explanation": "All these loops continue running until their condition evaluates to false.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does this code check?\n\nbool check(int a) => a % 2 != 0;",
+      "options": ["Even numbers", "Prime numbers", "Odd numbers", "Negative numbers"],
+      "correct": "Odd numbers",
+      "explanation": "The expression a % 2 != 0 checks if a number is odd.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What will this print?\n\nString s = 'Hello';\nprint(s.substring(1,4));",
+      "options": ["ell", "ello", "Hel", "H"],
+      "correct": "ell",
+      "explanation": "substring(startInclusive, endExclusive) returns a substring from index 1 to 3.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which of these code snippets correctly reverses a list?",
+      "options": ["list.reversed", "List.from(list.reversed)", "reversed(list)", "All of these"],
+      "correct": "List.from(list.reversed)",
+      "explanation": "list.reversed returns an iterable. You need List.from() to convert it to a list.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What will be printed?\n\nint x = 5;\nvoid change() { x = 10; }\nmain() {\n  print(x);\n  change();\n  print(x);\n}",
+      "options": ["5 5", "5 10", "10 10", "Error"],
+      "correct": "5 10",
+      "explanation": "Global variables can be modified inside functions.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which of these correctly implements a factorial function?",
+      "options": ["int f(int n) => n * f(n-1);", "int f(int n) { return n > 1 ? n * f(n-1) : 1; }", "Both", "None"],
+      "correct": "int f(int n) { return n > 1 ? n * f(n-1) : 1; }",
+      "explanation": "The first option lacks a base case and causes a stack overflow.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What will this output?\n\nvar a = [1, 2];\nvar b = a;\na.add(3);\nprint(b.length);",
+      "options": ["2", "3", "0", "Error"],
+      "correct": "3",
+      "explanation": "Both 'a' and 'b' refer to the same list, so changes to 'a' affect 'b'.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which code handles null correctly?",
+      "options": ["String? s; print(s!);", "String? s; print(s ?? 'default');", "Both", "None"],
+      "correct": "String? s; print(s ?? 'default');",
+      "explanation": "The first option crashes if 's' is null. The second one prints 'default' if 's' is null.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What does this code calculate?\n\nList<int> fib(int n) {\n  return List.generate(n, (i) => i < 2 ? i : fib(i-1) + fib(i-2));\n}",
+      "options": ["Prime numbers", "Factorials", "Fibonacci sequence", "Binary search"],
+      "correct": "Fibonacci sequence",
+      "explanation": "This is a classic recursive implementation of the Fibonacci sequence.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the output of this code?\n\nvoid main() {\n  print('Hello World'.length); }",
+      "options": ["11", "12", "13", "Error"],
+      "correct": "12",
+      "explanation": "'Hello World' has 12 characters including the space.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which method is used to check if a list is empty?",
+      "options": ["list.isEmpty", "list.isNull", "list.empty", "list.length == 0"],
+      "correct": "list.isEmpty",
+      "explanation": "isEmpty returns true if the list contains no elements.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does this code do?\n\nvoid main() { print(3 * 3); }",
+      "options": ["Prints 6", "Prints 9", "Prints 3", "Error"],
+      "correct": "Prints 9",
+      "explanation": "3 * 3 is 9.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the correct way to declare a variable in Dart?",
+      "options": ["int x;", "x int;", "var x = int;", "let x;"],
+      "correct": "int x;",
+      "explanation": "In Dart, variables are declared by specifying their type first, followed by the variable name.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which operator is used to check equality in Dart?",
+      "options": ["=", "==", "===", "!="],
+      "correct": "==",
+      "explanation": "The '==' operator checks if two values are equal in Dart.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which method is used to add an element to a list?",
+      "options": ["add()", "insert()", "append()", "addElement()"],
+      "correct": "add()",
+      "explanation": "The add() method is used to add an element to a list in Dart.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which keyword is used to declare a constant in Dart?",
+      "options": ["final", "const", "immutable", "static"],
+      "correct": "const",
+      "explanation": "The const keyword is used to declare compile-time constants.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the result of this expression?\n\nvar a = 10;\nvar b = 5;\nprint(a % b);",
+      "options": ["0", "5", "10", "Error"],
+      "correct": "0",
+      "explanation": "The modulus operator (%) gives the remainder after division. 10 divided by 5 has no remainder.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the output of the following code?\n\nvar x = 5;\nprint(x++);",
+      "options": ["5", "6", "Error", "None"],
+      "correct": "5",
+      "explanation": "The x++ operator prints the current value of x before incrementing it.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does the following code return?\n\nString name = 'Dart';\nprint(name.toUpperCase());",
+      "options": ["dart", "DART", "Dart", "Error"],
+      "correct": "DART",
+      "explanation": "The toUpperCase() method converts all letters in a string to uppercase.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the output of the following code?\n\nvoid main() { var num = 3; if (num > 5) print('Big'); else print('Small'); }",
+      "options": ["Big", "Small", "Error", "None"],
+      "correct": "Small",
+      "explanation": "Since 3 is not greater than 5, it prints 'Small'.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does this code do?\n\nvoid main() { List<int> nums = [1, 2, 3]; nums.add(4); print(nums); }",
+      "options": ["[1, 2, 3]", "[1, 2, 3, 4]", "Error", "None"],
+      "correct": "[1, 2, 3, 4]",
+      "explanation": "The add() method appends the value 4 to the list.",
+      "difficulty": "medium"
+    }
+  ]
+}
